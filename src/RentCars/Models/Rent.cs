@@ -21,7 +21,6 @@ public class Rent
         this.Person.Debit = this.Price;
     }
 
-    //11 - Implemente os métodos de `cancelar` e `finalizar` um aluguel
     public void Cancel(int daysLeft)
     {
         this.Status = RentStatus.Canceled;
@@ -29,7 +28,6 @@ public class Rent
         this.Person.Debit = (DaysRented - daysLeft) * this.Vehicle.PricePerDay * 1.5; 
     }
 
-    //11 - Implemente os métodos de `cancelar` e `finalizar` um aluguel
     public void Finish()
     {
         this.Status = RentStatus.Finished;
